@@ -1,5 +1,9 @@
 version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
-options: "721a6eed5094e5129a186f5bf81b26b6"
-build_time: [548257455, 65483000]
+options: "d8e2b023d8e13b92e90032b41501b140"
+build_time: [548268682, 261117000]
 inputs:
+  "/Users/batu/Desktop/CarTrackApp/CarTrackApp/Models/Car.swift": [548264586, 0]
+  "/Users/batu/Desktop/CarTrackApp/CarTrackApp/Extensions/AlamofireExtension.swift": [548263776, 0]
+  "/Users/batu/Desktop/CarTrackApp/CarTrackApp/Services/Router.swift": [548263417, 0]
+  "/Users/batu/Desktop/CarTrackApp/CarTrackApp/Services/CarService.swift": [548268664, 0]
   "/Users/batu/Desktop/CarTrackApp/CarTrackApp/AppDelegate.swift": [548256780, 0]

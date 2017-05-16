@@ -133,6 +133,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import RealmSwift;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -150,6 +151,37 @@ SWIFT_CLASS("_TtC11CarTrackApp11AppDelegate")
 - (void)applicationDidBecomeActive:(UIApplication * _Nonnull)application;
 - (void)applicationWillTerminate:(UIApplication * _Nonnull)application;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSHTTPURLResponse;
+@class RLMRealm;
+@class RLMObjectSchema;
+@class RLMSchema;
+
+SWIFT_CLASS("_TtC11CarTrackApp3Car")
+@interface Car : RealmSwiftObject
+@property (nonatomic, copy) NSString * _Nonnull id;
+@property (nonatomic, copy) NSString * _Nonnull modelIdentifier;
+@property (nonatomic, copy) NSString * _Nonnull modelName;
+@property (nonatomic, copy) NSString * _Nonnull name;
+@property (nonatomic, copy) NSString * _Nonnull make;
+@property (nonatomic, copy) NSString * _Nonnull group;
+@property (nonatomic, copy) NSString * _Nonnull color;
+@property (nonatomic, copy) NSString * _Nonnull series;
+@property (nonatomic, copy) NSString * _Nonnull fuelTypeRaw;
+@property (nonatomic) double fuelLevel;
+@property (nonatomic, copy) NSString * _Nonnull transmissionRaw;
+@property (nonatomic, copy) NSString * _Nonnull licensePlate;
+@property (nonatomic) double latitude;
+@property (nonatomic) double longitude;
+@property (nonatomic, copy) NSString * _Nonnull innerCleanlinessRaw;
+@property (nonatomic, copy) NSString * _Nonnull carImageUrl;
++ (NSString * _Nonnull)primaryKey SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithResponse:(NSHTTPURLResponse * _Nonnull)response representation:(id _Nonnull)representation;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithValue:(id _Nonnull)value OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithRealm:(RLMRealm * _Nonnull)realm schema:(RLMObjectSchema * _Nonnull)schema OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithValue:(id _Nonnull)value schema:(RLMSchema * _Nonnull)schema OBJC_DESIGNATED_INITIALIZER;
 @end
 
 #pragma clang diagnostic pop
