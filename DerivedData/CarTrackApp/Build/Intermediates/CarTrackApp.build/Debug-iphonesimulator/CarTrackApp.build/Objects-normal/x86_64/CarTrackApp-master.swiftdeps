@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
+options: "721a6eed5094e5129a186f5bf81b26b6"
+build_time: [548257455, 65483000]
+inputs:
+  "/Users/batu/Desktop/CarTrackApp/CarTrackApp/AppDelegate.swift": [548256780, 0]
