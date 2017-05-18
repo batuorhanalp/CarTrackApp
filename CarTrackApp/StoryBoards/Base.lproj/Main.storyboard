@@ -50,7 +50,7 @@
         <!--Detail View Controller-->
         <scene sceneID="Q00-cD-BoF">
             <objects>
-                <viewController id="70c-n1-mul" customClass="DetailViewController" customModule="CarTrackApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="70c-n1-mul" customClass="DetailViewController" customModule="CarTrackApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mjM-ZE-Z4n"/>
                         <viewControllerLayoutGuide type="bottom" id="NIL-a6-qs5"/>

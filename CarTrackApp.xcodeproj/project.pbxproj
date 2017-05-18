@@ -12,6 +12,7 @@
 		4712A4651ECDB40100C86CB8 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4712A4641ECDB40100C86CB8 /* MapView.swift */; };
 		4712A4671ECDC26200C86CB8 /* CarDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4712A4661ECDC26200C86CB8 /* CarDetailView.swift */; };
 		4712A4691ECDC27200C86CB8 /* CarDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4712A4681ECDC27200C86CB8 /* CarDetailView.xib */; };
+		4712A46B1ECDD28600C86CB8 /* RealmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4712A46A1ECDD28600C86CB8 /* RealmTests.swift */; };
 		4714CC911ECB370C00AABB9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4714CC901ECB370C00AABB9C /* AppDelegate.swift */; };
 		4714CCB11ECB370C00AABB9C /* CarTrackAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4714CCB01ECB370C00AABB9C /* CarTrackAppUITests.swift */; };
 		4714CCC81ECB392D00AABB9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4714CCC11ECB392D00AABB9C /* LaunchScreen.storyboard */; };
@@ -62,6 +63,7 @@
 		4712A4641ECDB40100C86CB8 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		4712A4661ECDC26200C86CB8 /* CarDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarDetailView.swift; sourceTree = "<group>"; };
 		4712A4681ECDC27200C86CB8 /* CarDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarDetailView.xib; sourceTree = "<group>"; };
+		4712A46A1ECDD28600C86CB8 /* RealmTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmTests.swift; path = HelperTests/RealmTests.swift; sourceTree = "<group>"; };
 		4714CC8D1ECB370C00AABB9C /* CarTrackApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarTrackApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4714CC901ECB370C00AABB9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4714CCA11ECB370C00AABB9C /* CarTrackAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarTrackAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -293,6 +295,7 @@
 			isa = PBXGroup;
 			children = (
 				476736081ECD8BFA0088C0DC /* LocationTests.swift */,
+				4712A46A1ECDD28600C86CB8 /* RealmTests.swift */,
 			);
 			name = "Helper Tests";
 			sourceTree = "<group>";
@@ -635,6 +638,7 @@
 				4714CCDA1ECB55EB00AABB9C /* CarTests.swift in Sources */,
 				476736091ECD8BFA0088C0DC /* LocationTests.swift in Sources */,
 				4714CCDD1ECB5AD100AABB9C /* CarServiceTests.swift in Sources */,
+				4712A46B1ECDD28600C86CB8 /* RealmTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
