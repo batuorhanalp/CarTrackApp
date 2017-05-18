@@ -27,7 +27,7 @@ class CarTableViewCell: UITableViewCell {
         self.modelLabel.text = "\(car.name) \(car.modelName)"
         self.fuelTypeLabel.text = "\(car.fuelType)"
         self.transmissionLabel.text = "\(car.transmission)"
-        self.thumbImageView.sd_setImage(with: URL(string: "https://prod.drive-now-content.com/fileadmin/user_upload_global/assets/cars/\(car.modelIdentifier)/\(car.color)/2x/car.png"), placeholderImage: UIImage(named: R.image.carDefault.name))
+        self.thumbImageView.sd_setImage(with: URL(string: car.carImageUrl), placeholderImage: UIImage(named: R.image.carDefault.name))
 
     }
 }

@@ -15,6 +15,10 @@ struct CarService {
     
     static func get(completion: @escaping ([Car]) -> ()) {
         
+        if Router.checkConnection == .NotReachable {
+            return
+        }
+        
         // First clearing database in case of removed cars
         DatabaseMethods.clearDatabase {
             

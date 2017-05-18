@@ -17,8 +17,11 @@ class CarTableViewController: BaseViewController, UITableViewDelegate, UITableVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         self.getCars {
+            print("Cars: \(self.cars)")
             self.tableView.reloadData()
         }
     }

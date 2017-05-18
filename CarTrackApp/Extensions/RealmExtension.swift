@@ -12,7 +12,7 @@ protocol DataSource {
     
     associatedtype T: Object
     
-    static func get() -> [T]
+    static func get() -> Results<T>
     static func get(id: Any) -> T?
 }
 

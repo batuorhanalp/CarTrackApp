@@ -10,12 +10,13 @@
 		22AF0A1803FF73D317DB325A /* Pods_CarTrackApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C8AFE5CF51E83E22D34721 /* Pods_CarTrackApp.framework */; };
 		4712A4631ECD95F400C86CB8 /* MapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4712A4621ECD95F400C86CB8 /* MapAnnotation.swift */; };
 		4712A4651ECDB40100C86CB8 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4712A4641ECDB40100C86CB8 /* MapView.swift */; };
+		4712A4671ECDC26200C86CB8 /* CarDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4712A4661ECDC26200C86CB8 /* CarDetailView.swift */; };
+		4712A4691ECDC27200C86CB8 /* CarDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4712A4681ECDC27200C86CB8 /* CarDetailView.xib */; };
 		4714CC911ECB370C00AABB9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4714CC901ECB370C00AABB9C /* AppDelegate.swift */; };
 		4714CCB11ECB370C00AABB9C /* CarTrackAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4714CCB01ECB370C00AABB9C /* CarTrackAppUITests.swift */; };
 		4714CCC81ECB392D00AABB9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4714CCC11ECB392D00AABB9C /* LaunchScreen.storyboard */; };
 		4714CCC91ECB392D00AABB9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4714CCC31ECB392D00AABB9C /* Main.storyboard */; };
 		4714CCCA1ECB392D00AABB9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4714CCC61ECB392D00AABB9C /* Assets.xcassets */; };
-		4714CCCC1ECB39A700AABB9C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4714CCCB1ECB39A700AABB9C /* Info.plist */; };
 		4714CCCF1ECB496300AABB9C /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4714CCCE1ECB496300AABB9C /* Car.swift */; };
 		4714CCD21ECB4F3D00AABB9C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4714CCD11ECB4F3D00AABB9C /* Router.swift */; };
 		4714CCD41ECB517200AABB9C /* CarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4714CCD31ECB517200AABB9C /* CarService.swift */; };
@@ -59,6 +60,8 @@
 		342CE0E92D7013B1333492A2 /* Pods-CarTrackAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarTrackAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarTrackAppUITests/Pods-CarTrackAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4712A4621ECD95F400C86CB8 /* MapAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapAnnotation.swift; sourceTree = "<group>"; };
 		4712A4641ECDB40100C86CB8 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		4712A4661ECDC26200C86CB8 /* CarDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarDetailView.swift; sourceTree = "<group>"; };
+		4712A4681ECDC27200C86CB8 /* CarDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarDetailView.xib; sourceTree = "<group>"; };
 		4714CC8D1ECB370C00AABB9C /* CarTrackApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarTrackApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4714CC901ECB370C00AABB9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4714CCA11ECB370C00AABB9C /* CarTrackAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarTrackAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -238,6 +241,8 @@
 				476735F41ECCC46B0088C0DC /* CarTableViewCell.swift */,
 				4712A4621ECD95F400C86CB8 /* MapAnnotation.swift */,
 				4712A4641ECDB40100C86CB8 /* MapView.swift */,
+				4712A4661ECDC26200C86CB8 /* CarDetailView.swift */,
+				4712A4681ECDC27200C86CB8 /* CarDetailView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -425,9 +430,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4714CCCC1ECB39A700AABB9C /* Info.plist in Resources */,
 				4714CCC81ECB392D00AABB9C /* LaunchScreen.storyboard in Resources */,
 				4714CCC91ECB392D00AABB9C /* Main.storyboard in Resources */,
+				4712A4691ECDC27200C86CB8 /* CarDetailView.xib in Resources */,
 				4714CCCA1ECB392D00AABB9C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -611,6 +616,7 @@
 				4714CCD71ECB524A00AABB9C /* AlamofireExtension.swift in Sources */,
 				476735FD1ECCC4CA0088C0DC /* CarMapViewController.swift in Sources */,
 				476736041ECCD6E70088C0DC /* LocationManager.swift in Sources */,
+				4712A4671ECDC26200C86CB8 /* CarDetailView.swift in Sources */,
 				4712A4651ECDB40100C86CB8 /* MapView.swift in Sources */,
 				4714CCD21ECB4F3D00AABB9C /* Router.swift in Sources */,
 				476735F31ECCC05B0088C0DC /* RealmExtension.swift in Sources */,

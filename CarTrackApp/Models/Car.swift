@@ -9,15 +9,15 @@
 import RealmSwift
 
 final class Car: Object, DataSource, ResponseObjectSerializable, ResponseCollectionSerializable {
-    var id: String = ""
-    var modelIdentifier: String = ""
-    var modelName: String = ""
-    var name: String = ""
-    var make: String = ""
-    var group: String = ""
-    var color: String = ""
-    var series: String = ""
-    var fuelTypeRaw: String = ""
+    dynamic var id: String = ""
+    dynamic var modelIdentifier: String = ""
+    dynamic var modelName: String = ""
+    dynamic var name: String = ""
+    dynamic var make: String = ""
+    dynamic var group: String = ""
+    dynamic var color: String = ""
+    dynamic var series: String = ""
+    dynamic var fuelTypeRaw: String = ""
     var fuelType: String {
         get {
             switch fuelTypeRaw {
@@ -32,8 +32,8 @@ final class Car: Object, DataSource, ResponseObjectSerializable, ResponseCollect
             }
         }
     }
-    var fuelLevel: Double = 0
-    var transmissionRaw: String = ""
+    dynamic var fuelLevel: Double = 0
+    dynamic var transmissionRaw: String = ""
     var transmission: String {
         get {
             switch transmissionRaw {
@@ -44,10 +44,10 @@ final class Car: Object, DataSource, ResponseObjectSerializable, ResponseCollect
             }
         }
     }
-    var licensePlate: String = ""
-    var latitude: Double = 0
-    var longitude: Double = 0
-    var innerCleanlinessRaw: String = ""
+    dynamic var licensePlate: String = ""
+    dynamic var latitude: Double = 0
+    dynamic var longitude: Double = 0
+    dynamic var innerCleanlinessRaw: String = ""
     var innerCleanliness: String {
         get {
             switch innerCleanlinessRaw {
@@ -60,7 +60,7 @@ final class Car: Object, DataSource, ResponseObjectSerializable, ResponseCollect
             }
         }
     }
-    var carImageUrl: String = ""
+    dynamic var carImageUrl: String = ""
     
     /*
      * Primary key
@@ -88,12 +88,12 @@ final class Car: Object, DataSource, ResponseObjectSerializable, ResponseCollect
         self.latitude = representation.value(forKeyPath: "latitude") as! Double
         self.longitude = representation.value(forKeyPath: "longitude") as! Double
         self.innerCleanlinessRaw = representation.value(forKeyPath: "innerCleanliness") as! String
-        self.carImageUrl = representation.value(forKeyPath: "carImageUrl") as! String
+        self.carImageUrl = "https://prod.drive-now-content.com/fileadmin/user_upload_global/assets/cars/\(self.modelIdentifier)/\(self.color)/2x/car.png"
     }
     
-    static func get() -> [Car] {
+    static func get() -> Results<Car> {
         let realm = try! Realm()
-        return realm.objects(Car.self).toArray(type: Car.self)
+        return realm.objects(Car.self)
     }
     
     static func get(id: Any) -> Car? {

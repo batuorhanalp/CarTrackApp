@@ -21,17 +21,8 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.file` struct is generated, and contains static references to 1 files.
+  /// This `R.file` struct is generated, and contains static references to 0 files.
   struct file {
-    /// Resource file `Info.plist`.
-    static let infoPlist = Rswift.FileResource(bundle: R.hostingBundle, name: "Info", pathExtension: "plist")
-    
-    /// `bundle.url(forResource: "Info", withExtension: "plist")`
-    static func infoPlist(_: Void = ()) -> Foundation.URL? {
-      let fileResource = R.file.infoPlist
-      return fileResource.bundle.url(forResource: fileResource)
-    }
-    
     fileprivate init() {}
   }
   
@@ -53,8 +44,16 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.nib` struct is generated, and contains static references to 0 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 1 nibs.
   struct nib {
+    /// Nib `CarDetailView`.
+    static let carDetailView = _R.nib._CarDetailView()
+    
+    /// `UINib(name: "CarDetailView", in: bundle)`
+    static func carDetailView(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.carDetailView)
+    }
+    
     fileprivate init() {}
   }
   
@@ -71,12 +70,12 @@ struct R: Rswift.Validatable {
     /// This struct is generated for `CarMapViewController`, and contains static references to 1 segues.
     struct carMapViewController {
       /// Segue identifier `detailSegue`.
-      static let detailSegue: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, CarMapViewController, UIKit.UIViewController> = Rswift.StoryboardSegueIdentifier(identifier: "detailSegue")
+      static let detailSegue: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, CarMapViewController, DetailViewController> = Rswift.StoryboardSegueIdentifier(identifier: "detailSegue")
       
       /// Optionally returns a typed version of segue `detailSegue`.
       /// Returns nil if either the segue identifier, the source, destination, or segue types don't match.
       /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
-      static func detailSegue(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, CarMapViewController, UIKit.UIViewController>? {
+      static func detailSegue(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, CarMapViewController, DetailViewController>? {
         return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.carMapViewController.detailSegue, segue: segue)
       }
       
@@ -86,12 +85,12 @@ struct R: Rswift.Validatable {
     /// This struct is generated for `CarTableViewController`, and contains static references to 1 segues.
     struct carTableViewController {
       /// Segue identifier `detailSegue`.
-      static let detailSegue: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, CarTableViewController, UIKit.UIViewController> = Rswift.StoryboardSegueIdentifier(identifier: "detailSegue")
+      static let detailSegue: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, CarTableViewController, DetailViewController> = Rswift.StoryboardSegueIdentifier(identifier: "detailSegue")
       
       /// Optionally returns a typed version of segue `detailSegue`.
       /// Returns nil if either the segue identifier, the source, destination, or segue types don't match.
       /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
-      static func detailSegue(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, CarTableViewController, UIKit.UIViewController>? {
+      static func detailSegue(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, CarTableViewController, DetailViewController>? {
         return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.carTableViewController.detailSegue, segue: segue)
       }
       
@@ -141,6 +140,17 @@ struct R: Rswift.Validatable {
 
 struct _R {
   struct nib {
+    struct _CarDetailView: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "CarDetailView"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+      
+      fileprivate init() {}
+    }
+    
     fileprivate init() {}
   }
   

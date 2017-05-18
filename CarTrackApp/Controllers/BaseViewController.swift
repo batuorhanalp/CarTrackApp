@@ -22,10 +22,11 @@ class BaseViewController: UIViewController {
         
         if cars.count == 0 {
             CarService.get(completion: { [unowned self] (cars) in
-                self.cars = cars
+                self.cars = Car.get()
                 completion()
             })
         } else {
+            self.cars = Car.get()
             completion()
         }
         
