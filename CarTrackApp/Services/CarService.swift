@@ -15,26 +15,38 @@ struct CarService {
     
     static func get(completion: @escaping ([Car]) -> ()) {
         
-        let router = Router(method: .get, path: CarService.rootPath, parameters: nil)
-        do {
-            let request = try router.asURLRequest()
-            _ = Alamofire.request(request)
-                .responseObject(completionHandler: { (response: DataResponse<CarResponse>) in
-                    
-                    debugPrint("Car response: \(response)")
-                    
-                    if let value = response.result.value {
-                        completion(value.cars)
-                    } else {
-                        completion([Car]())
-                    }
-                })
-        } catch {
-            print("An error occured: \(error)")
-            completion([Car]())
+        // First clearing database in case of removed cars
+        DatabaseMethods.clearDatabase {
+            
+            /*
+             * After database clearing completition fetchs the cars from Rest API
+             */
+            let router = Router(method: .get, path: CarService.rootPath, parameters: nil)
+            do {
+                let request = try router.asURLRequest()
+                _ = Alamofire.request(request)
+                    .responseObject(completionHandler: { (response: DataResponse<CarResponse>) in
+                        
+                        debugPrint("Car response: \(response)")
+                        
+                        if let value = response.result.value {
+                            
+                            // Saving serialized data to Realm database
+                            for car in value.cars {
+                                _ = car.save(type: Car.self)
+                            }
+                            
+                            completion(value.cars)
+                        } else {
+                            completion([Car]())
+                        }
+                    })
+            } catch {
+                print("An error occured: \(error)")
+                completion([Car]())
+            }
+
         }
-        
-        
     }
 }
 

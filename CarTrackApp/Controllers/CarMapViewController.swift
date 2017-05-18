@@ -19,8 +19,7 @@ class CarMapViewController: BaseViewController {
         super.viewDidLoad()
         
         self.getCars {
-            // TODO
-            
+            self.generatePins()
         }
     }
     
@@ -33,7 +32,7 @@ class CarMapViewController: BaseViewController {
         var currentLocation = location
         
         if currentLocation == nil {
-           currentLocation = CLLocation(latitude: 0, longitude: 0)
+            currentLocation = CLLocation(latitude: 48.134557, longitude: 11.576921)
         }
         
         let regionRadius: CLLocationDistance = 100
@@ -41,5 +40,17 @@ class CarMapViewController: BaseViewController {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(currentLocation!.coordinate, regionRadius * 2.0, regionRadius * 2.0)
         mapView.setRegion(coordinateRegion, animated: true)
         
+    }
+    
+    // Generate pins for Sixt cars
+    func generatePins() {
+    
+        var sixtPins = [SixtCarPin]()
+        
+        for car in self.cars {
+            sixtPins.append(SixtCarPin(car: car))
+        }
+        
+        mapView.addAnnotations(sixtPins)
     }
 }

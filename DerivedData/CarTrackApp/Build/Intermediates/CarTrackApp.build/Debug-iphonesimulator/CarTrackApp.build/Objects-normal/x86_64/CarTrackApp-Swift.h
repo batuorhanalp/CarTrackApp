@@ -134,6 +134,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
 @import RealmSwift;
+@import MapKit;
 @import Foundation;
 @import ObjectiveC;
 @import CoreLocation;
@@ -216,8 +217,18 @@ SWIFT_CLASS("_TtC11CarTrackApp20CarMapViewController")
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)startMapWithLocation:(CLLocation * _Nullable)location;
+- (void)generatePins;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@protocol MKAnnotation;
+@class MKAnnotationView;
+@class UIControl;
+
+@interface CarMapViewController (SWIFT_EXTENSION(CarTrackApp)) <MKMapViewDelegate>
+- (MKAnnotationView * _Nullable)mapView:(MKMapView * _Nonnull)mapView viewForAnnotation:(id <MKAnnotation> _Nonnull)annotation SWIFT_WARN_UNUSED_RESULT;
+- (void)mapView:(MKMapView * _Nonnull)mapView annotationView:(MKAnnotationView * _Nonnull)view calloutAccessoryControlTapped:(UIControl * _Nonnull)control;
 @end
 
 @class UIImageView;
@@ -273,6 +284,19 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) LocationMana
 
 
 @interface RealmSwiftObject (SWIFT_EXTENSION(CarTrackApp))
+@end
+
+@class MKMapItem;
+
+SWIFT_CLASS("_TtC11CarTrackApp10SixtCarPin")
+@interface SixtCarPin : NSObject <MKAnnotation>
+@property (nonatomic, readonly, strong) Car * _Null_unspecified car;
+@property (nonatomic, readonly, copy) NSString * _Nullable title;
+@property (nonatomic, readonly, copy) NSString * _Nullable subtitle;
+@property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
+- (nonnull instancetype)initWithCar:(Car * _Nonnull)car OBJC_DESIGNATED_INITIALIZER;
+- (MKMapItem * _Nonnull)mapItem SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
 @end
 
 #pragma clang diagnostic pop

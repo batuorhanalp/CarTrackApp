@@ -22,7 +22,7 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/70c-n1-mul-view-4Mm-i0-G2U.nib</key>
 		<data>
-		0jXbeHgxkpuRLjdIkiQHfrj97r0=
+		qY5Lzi7vpa42a+6sXpLAPgnECLQ=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/QoB-Wm-ntp-view-DVf-Ah-hl6.nib</key>
 		<data>
-		nk4qvVYYvmm91evMTGac+aH4lMI=
+		Qqot7stOIX3/7ZjTaASo5UTZyCw=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UITabBarController-rTe-8q-U50.nib</key>
 		<data>
-		lgx6YK7W3CvaQ/EO1zj5pOB3jqM=
+		6gOHycyzirb7IqTabL582Pl5IBI=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-70c-n1-mul.nib</key>
 		<data>
-		R/aA7RXRTA9wLmzi7n9NX2DgBFs=
+		UbsK16biidUHq6IlXAUs/Ur5ZrE=
 		</data>
 		<key>Base.lproj/Main.storyboardc/vkx-BI-sku-view-4Pf-rH-jG0.nib</key>
 		<data>
-		flLQy9SrRVjj+TLH0cTw0/d8VgM=
+		uzjZp1Amrd72TDNeNi3AxNU2aMU=
 		</data>
 		<key>Frameworks/Alamofire.framework/Alamofire</key>
 		<data>
@@ -465,6 +465,10 @@
 		<data>
 		0frVurGOX6522Iba8IdTedJkiYo=
 		</data>
+		<key>Frameworks/libswiftContacts.dylib</key>
+		<data>
+		4xyO0zsWyYVzkQJpvQk2lEraHcM=
+		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
 		+msuybEsPPMR2cLaC0bH4tCpSWA=
@@ -872,11 +876,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0jXbeHgxkpuRLjdIkiQHfrj97r0=
+			qY5Lzi7vpa42a+6sXpLAPgnECLQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			rBqih1AGQcf6/vKA8KjRaGrI9cW/gjTtMfvP+wHoeH4=
+			NQgave2loZHFmonsoIedlRqmOF4mqQEyBA3WYluVc8U=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -894,44 +898,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nk4qvVYYvmm91evMTGac+aH4lMI=
+			Qqot7stOIX3/7ZjTaASo5UTZyCw=
 			</data>
 			<key>hash2</key>
 			<data>
-			pUQE6KFQb8/AoC5Sdz2czazk2m5/kWv498nbpXkpwOI=
+			t6izxP1mHM8uVtgeblE6EW9+rzeS2pGLnap59qqEoeA=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UITabBarController-rTe-8q-U50.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lgx6YK7W3CvaQ/EO1zj5pOB3jqM=
+			6gOHycyzirb7IqTabL582Pl5IBI=
 			</data>
 			<key>hash2</key>
 			<data>
-			0FZB+xDJ97Xj3l4v/PepHYvtuwGfs75aBee6M8ZyPVc=
+			So3tVhu2G7Fpv9ppLH4ORxjEgOB0f+IuLeE49SlDAv8=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UIViewController-70c-n1-mul.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			R/aA7RXRTA9wLmzi7n9NX2DgBFs=
+			UbsK16biidUHq6IlXAUs/Ur5ZrE=
 			</data>
 			<key>hash2</key>
 			<data>
-			3H1HE+QrcBdaOOQl+vTJdzplrrx7bL5ItKSaBiHDuqo=
+			r9oXBE1Nv7FAN2816AOg8yKKQiadsnYeKbj003T6SM4=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/vkx-BI-sku-view-4Pf-rH-jG0.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			flLQy9SrRVjj+TLH0cTw0/d8VgM=
+			uzjZp1Amrd72TDNeNi3AxNU2aMU=
 			</data>
 			<key>hash2</key>
 			<data>
-			GaVmPKgPiexo61tURzQSvsn+Wt9eIBgh7IdsuBAYl2c=
+			dmrNqrMyxD1CsX35LLrStezfwLnaNCvte7HPGU8kgW4=
 			</data>
 		</dict>
 		<key>Frameworks/Alamofire.framework/Alamofire</key>
@@ -2031,6 +2035,17 @@
 			<key>hash2</key>
 			<data>
 			QFa4oVkeCq7DUecWrEpwl9K3/xP42pymdP4ohq/DBZQ=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftContacts.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4xyO0zsWyYVzkQJpvQk2lEraHcM=
+			</data>
+			<key>hash2</key>
+			<data>
+			bTY187I5Vx+wCDMywR58ZiaOjcZUbc+3YcviYNawSHI=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>
