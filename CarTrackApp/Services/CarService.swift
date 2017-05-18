@@ -38,6 +38,9 @@ struct CarService {
     }
 }
 
+/*
+ * Car service response serialization
+ */
 struct CarResponse: ResponseObjectSerializable, ResponseCollectionSerializable {
     
     var cars = [Car]()

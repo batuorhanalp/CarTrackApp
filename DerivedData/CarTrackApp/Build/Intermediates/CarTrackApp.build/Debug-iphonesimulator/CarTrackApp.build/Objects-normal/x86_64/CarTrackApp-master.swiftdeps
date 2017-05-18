@@ -1,9 +1,18 @@
 version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
-options: "d8e2b023d8e13b92e90032b41501b140"
-build_time: [548268682, 261117000]
+options: "5412bd08e1a25cc71f53059cfc7cc8ca"
+build_time: [548415931, 692537000]
 inputs:
-  "/Users/batu/Desktop/CarTrackApp/CarTrackApp/Models/Car.swift": [548264586, 0]
+  "/Users/batu/Desktop/CarTrackApp/CarTrackApp/Models/Car.swift": [548361137, 0]
+  "/Users/batu/Desktop/CarTrackApp/CarTrackApp/Controllers/CarTableViewController.swift": [548362963, 0]
+  "/Users/batu/Desktop/CarTrackApp/CarTrackApp/Views/CarTableViewCell.swift": [548362881, 0]
+  "/Users/batu/Desktop/CarTrackApp/CarTrackApp/Controllers/DetailViewController.swift": [548362399, 0]
   "/Users/batu/Desktop/CarTrackApp/CarTrackApp/Extensions/AlamofireExtension.swift": [548263776, 0]
+  "/Users/batu/Desktop/CarTrackApp/CarTrackApp/Controllers/CarMapViewController.swift": [548411859, 0]
+  "/Users/batu/Desktop/CarTrackApp/CarTrackApp/Helpers/LocationManager.swift": [548411018, 0]
   "/Users/batu/Desktop/CarTrackApp/CarTrackApp/Services/Router.swift": [548263417, 0]
-  "/Users/batu/Desktop/CarTrackApp/CarTrackApp/Services/CarService.swift": [548268664, 0]
+  "/Users/batu/Desktop/CarTrackApp/CarTrackApp/Extensions/RealmExtension.swift": [548358357, 0]
+  "/Users/batu/Desktop/CarTrackApp/CarTrackApp/Views/MapAnnotation.swift": [548415929, 0]
+  "/Users/batu/Desktop/CarTrackApp/CarTrackApp/Controllers/BaseViewController.swift": [548362755, 0]
+  "/Users/batu/Desktop/CarTrackApp/CarTrackApp/Services/CarService.swift": [548358400, 0]
+  "/Users/batu/Desktop/CarTrackApp/CarTrackApp/SupportingFiles/R.generated.swift": [548363112, 0]
   "/Users/batu/Desktop/CarTrackApp/CarTrackApp/AppDelegate.swift": [548256780, 0]

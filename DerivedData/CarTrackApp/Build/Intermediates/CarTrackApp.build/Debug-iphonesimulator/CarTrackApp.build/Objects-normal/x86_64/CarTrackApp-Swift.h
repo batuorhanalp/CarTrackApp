@@ -134,6 +134,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
 @import RealmSwift;
+@import Foundation;
+@import ObjectiveC;
+@import CoreLocation;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -153,6 +156,19 @@ SWIFT_CLASS("_TtC11CarTrackApp11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class Car;
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC11CarTrackApp18BaseViewController")
+@interface BaseViewController : UIViewController
+@property (nonatomic, copy) NSArray<Car *> * _Nonnull cars;
+- (void)viewDidLoad;
+- (void)getCarsWithCompletion:(void (^ _Nonnull)(void))completion;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class NSHTTPURLResponse;
 @class RLMRealm;
 @class RLMObjectSchema;
@@ -169,19 +185,94 @@ SWIFT_CLASS("_TtC11CarTrackApp3Car")
 @property (nonatomic, copy) NSString * _Nonnull color;
 @property (nonatomic, copy) NSString * _Nonnull series;
 @property (nonatomic, copy) NSString * _Nonnull fuelTypeRaw;
+@property (nonatomic, readonly, copy) NSString * _Nonnull fuelType;
 @property (nonatomic) double fuelLevel;
 @property (nonatomic, copy) NSString * _Nonnull transmissionRaw;
+@property (nonatomic, readonly, copy) NSString * _Nonnull transmission;
 @property (nonatomic, copy) NSString * _Nonnull licensePlate;
 @property (nonatomic) double latitude;
 @property (nonatomic) double longitude;
 @property (nonatomic, copy) NSString * _Nonnull innerCleanlinessRaw;
+@property (nonatomic, readonly, copy) NSString * _Nonnull innerCleanliness;
 @property (nonatomic, copy) NSString * _Nonnull carImageUrl;
 + (NSString * _Nonnull)primaryKey SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithResponse:(NSHTTPURLResponse * _Nonnull)response representation:(id _Nonnull)representation;
++ (NSArray<Car *> * _Nonnull)get SWIFT_WARN_UNUSED_RESULT;
++ (Car * _Nullable)getWithId:(id _Nonnull)id SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithValue:(id _Nonnull)value OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithRealm:(RLMRealm * _Nonnull)realm schema:(RLMObjectSchema * _Nonnull)schema OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithValue:(id _Nonnull)value schema:(RLMSchema * _Nonnull)schema OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class LocationManager;
+@class MKMapView;
+@class CLLocation;
+
+SWIFT_CLASS("_TtC11CarTrackApp20CarMapViewController")
+@interface CarMapViewController : BaseViewController
+@property (nonatomic, strong) LocationManager * _Nonnull locationManager;
+@property (nonatomic, weak) IBOutlet MKMapView * _Null_unspecified mapView;
+- (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
+- (void)startMapWithLocation:(CLLocation * _Nullable)location;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIImageView;
+@class UILabel;
+
+SWIFT_CLASS("_TtC11CarTrackApp16CarTableViewCell")
+@interface CarTableViewCell : UITableViewCell
+@property (nonatomic, strong) Car * _Null_unspecified car;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified thumbImageView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified modelLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified fuelTypeLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified transmissionLabel;
+- (void)fillWithCar:(Car * _Nonnull)car;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UITableView;
+@class UIStoryboardSegue;
+
+SWIFT_CLASS("_TtC11CarTrackApp22CarTableViewController")
+@interface CarTableViewController : BaseViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, strong) Car * _Nullable selectedCar;
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
+- (void)viewDidLoad;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC11CarTrackApp20DetailViewController")
+@interface DetailViewController : UIViewController
+@property (nonatomic, strong) Car * _Null_unspecified car;
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class CLLocationManager;
+
+SWIFT_CLASS("_TtC11CarTrackApp15LocationManager")
+@interface LocationManager : NSObject <CLLocationManagerDelegate>
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) LocationManager * _Nonnull sharedInstance;)
++ (LocationManager * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, strong) CLLocation * _Nullable location;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
+- (void)locationManagerWithManager:(CLLocationManager * _Null_unspecified)manager didUpdateLocations:(NSArray * _Null_unspecified)locations;
+@end
+
+
+@interface RealmSwiftObject (SWIFT_EXTENSION(CarTrackApp))
 @end
 
 #pragma clang diagnostic pop

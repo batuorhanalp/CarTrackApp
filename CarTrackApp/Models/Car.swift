@@ -6,44 +6,7 @@
 //  Copyright © 2017 Batu Orhanalp. All rights reserved.
 //
 
-/*
- "id": "WMWSW31010T113555",
- "modelIdentifier": "mini",
- "modelName": "MINI",
- "name": "Peggy",
- "make": "BMW",
- "group": "MINI",
- "color": "midnight_black",
- "series": "MINI",
- "fuelType": "D",
- "fuelLevel": 0.7,
- "transmission": "M",
- "licensePlate": "M-IL2642",
- "latitude": 48.130227,
- "longitude": 11.566136,
- "innerCleanliness": "VERY_CLEAN",
- "carImageUrl": "https://de.drive-now.com/static/drivenow/img/cars/mini.png"
- */
-
 import RealmSwift
-
-enum FuelType: String {
-    case diesel = "D"
-    case petrol = "P"
-    case hybrid = "H"
-    case electric = "E"
-}
-
-enum Transmission: String {
-    case automatic = "A"
-    case manual = "M"
-}
-
-enum Cleanliness: String {
-    case regular = "REGULAR"
-    case clean = "CLEAN"
-    case veryClean = "VERY_CLEAN"
-}
 
 struct CarEntity {
     let id: String
@@ -64,7 +27,7 @@ struct CarEntity {
     let carImageUrl: String
 }
 
-final class Car: Object, ResponseObjectSerializable, ResponseCollectionSerializable {
+final class Car: Object, DataSource, ResponseObjectSerializable, ResponseCollectionSerializable {
     var id: String = ""
     var modelIdentifier: String = ""
     var modelName: String = ""
@@ -74,40 +37,46 @@ final class Car: Object, ResponseObjectSerializable, ResponseCollectionSerializa
     var color: String = ""
     var series: String = ""
     var fuelTypeRaw: String = ""
-    var fuelType: FuelType {
+    var fuelType: String {
         get {
-            if let type = FuelType(rawValue: fuelTypeRaw) {
-                return type
+            switch fuelTypeRaw {
+            case "D":
+                return "Diesel"
+            case "H":
+                return "Hybrid"
+            case "E":
+                return "Electric"
+            default:
+                return "Petrol"
             }
-            return .petrol
-        } set {
-            self.fuelTypeRaw = newValue.rawValue
         }
     }
     var fuelLevel: Double = 0
     var transmissionRaw: String = ""
-    var transmission: Transmission {
+    var transmission: String {
         get {
-            if let type = Transmission(rawValue: transmissionRaw) {
-                return type
+            switch transmissionRaw {
+            case "A":
+                return "Automatic"
+            default:
+                return "Manual"
             }
-            return .manual
-        } set {
-            self.transmissionRaw = newValue.rawValue
         }
     }
     var licensePlate: String = ""
     var latitude: Double = 0
     var longitude: Double = 0
     var innerCleanlinessRaw: String = ""
-    var innerCleanliness: Cleanliness {
+    var innerCleanliness: String {
         get {
-            if let type = Cleanliness(rawValue: innerCleanlinessRaw) {
-                return type
+            switch innerCleanlinessRaw {
+            case "CLEAN":
+                return "Clean"
+            case "VERY_CLEAN":
+                return "Very clean"
+            default:
+                return "Regular"
             }
-            return .regular
-        } set {
-            self.innerCleanlinessRaw = newValue.rawValue
         }
     }
     var carImageUrl: String = ""
@@ -140,4 +109,15 @@ final class Car: Object, ResponseObjectSerializable, ResponseCollectionSerializa
         self.innerCleanlinessRaw = representation.value(forKeyPath: "innerCleanliness") as! String
         self.carImageUrl = representation.value(forKeyPath: "carImageUrl") as! String
     }
+    
+    static func get() -> [Car] {
+        let realm = try! Realm()
+        return realm.objects(Car.self).toArray(type: Car.self)
+    }
+    
+    static func get(id: Any) -> Car? {
+        let realm = try! Realm()
+        return realm.objects(Car.self).filter({ $0.id == id as! String }).first
+    }
+
 }

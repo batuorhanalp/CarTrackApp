@@ -13,6 +13,7 @@ def common_pods
     pod 'SnapKit'
     pod 'IQKeyboardManagerSwift'
     pod 'RSKPlaceholderTextView'
+    pod 'SDWebImage'
 end
 
 target 'CarTrackApp' do

@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Assets.car</key>
+		<data>
+		ZdsFV1UxH+Zb3oPU4iLFwZ8WDK8=
+		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
 		Nmv8xg66+dO8hypfVe9mh8damgM=
@@ -16,21 +20,33 @@
 		<data>
 		BDmdruF3eikiP9GSp71ZSDDLox8=
 		</data>
-		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
+		<key>Base.lproj/Main.storyboardc/70c-n1-mul-view-4Mm-i0-G2U.nib</key>
 		<data>
-		stWfgR+bGLHtZCMgY9jErden5Zk=
+		0jXbeHgxkpuRLjdIkiQHfrj97r0=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
-		MDrKFvFWroTb0+KEbQShBcoBvo4=
+		wlNMFbQrQ8Zi6GvJgauVmdPf9ZM=
 		</data>
-		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
+		<key>Base.lproj/Main.storyboardc/QoB-Wm-ntp-view-DVf-Ah-hl6.nib</key>
 		<data>
-		Hj6vlxiTEb0Yo4a7jvwhl9YiWFA=
+		nk4qvVYYvmm91evMTGac+aH4lMI=
+		</data>
+		<key>Base.lproj/Main.storyboardc/UITabBarController-rTe-8q-U50.nib</key>
+		<data>
+		lgx6YK7W3CvaQ/EO1zj5pOB3jqM=
+		</data>
+		<key>Base.lproj/Main.storyboardc/UIViewController-70c-n1-mul.nib</key>
+		<data>
+		R/aA7RXRTA9wLmzi7n9NX2DgBFs=
+		</data>
+		<key>Base.lproj/Main.storyboardc/vkx-BI-sku-view-4Pf-rH-jG0.nib</key>
+		<data>
+		flLQy9SrRVjj+TLH0cTw0/d8VgM=
 		</data>
 		<key>Frameworks/Alamofire.framework/Alamofire</key>
 		<data>
-		ALBZyzKJipGdc22wPIDFyIWyPzI=
+		GwNP3olkFBbjbvaqZknQfXlUZ4c=
 		</data>
 		<key>Frameworks/Alamofire.framework/Info.plist</key>
 		<data>
@@ -42,7 +58,7 @@
 		</data>
 		<key>Frameworks/Hex.framework/Hex</key>
 		<data>
-		h7L1lJQBfnna15RmT9V4lhRUEMc=
+		tiE3AY79nTCYD1W6s/E847zUGMU=
 		</data>
 		<key>Frameworks/Hex.framework/Info.plist</key>
 		<data>
@@ -146,7 +162,7 @@
 		</data>
 		<key>Frameworks/IQKeyboardManagerSwift.framework/IQKeyboardManagerSwift</key>
 		<data>
-		KlRAk0Sm2OBypmBE0U+Vv2mSTo0=
+		l+TYZnbCORtvyasJGDE0wcLUOro=
 		</data>
 		<key>Frameworks/IQKeyboardManagerSwift.framework/Info.plist</key>
 		<data>
@@ -162,7 +178,7 @@
 		</data>
 		<key>Frameworks/RSKPlaceholderTextView.framework/RSKPlaceholderTextView</key>
 		<data>
-		BpLnn32UMWDnn3h/tPIzCoWn210=
+		4B1d82NdphPboJi7O+1185lzAck=
 		</data>
 		<key>Frameworks/RSKPlaceholderTextView.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -174,7 +190,7 @@
 		</data>
 		<key>Frameworks/Reachability.framework/Reachability</key>
 		<data>
-		lnC8nU/iNJbnM3N4KN9iNg23I9s=
+		1LB2eY3TGNu6E2TQURkag8Mu8qc=
 		</data>
 		<key>Frameworks/Reachability.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -186,7 +202,7 @@
 		</data>
 		<key>Frameworks/Realm.framework/Realm</key>
 		<data>
-		wYQajkArWuEB7eckdyi7hZuhWu4=
+		QloLDazoBBvprTPQ5sZkuxKpGMI=
 		</data>
 		<key>Frameworks/Realm.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -198,7 +214,7 @@
 		</data>
 		<key>Frameworks/RealmSwift.framework/RealmSwift</key>
 		<data>
-		UC/RHf0GSFS5kH2AP1I4gxW6QYI=
+		r5AtR71a53Suh5ugKJDIk5Pm/2o=
 		</data>
 		<key>Frameworks/RealmSwift.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -210,11 +226,23 @@
 		</data>
 		<key>Frameworks/Rswift.framework/Rswift</key>
 		<data>
-		cSiVMabOTBO8Hw8r83V5dWVtYE8=
+		T/H2+2XwligSmSZ4VDbrVHMeSzw=
 		</data>
 		<key>Frameworks/Rswift.framework/_CodeSignature/CodeResources</key>
 		<data>
 		za+0ldf35ZACXVfOztOposCYHg8=
+		</data>
+		<key>Frameworks/SDWebImage.framework/Info.plist</key>
+		<data>
+		SV7/EwFoJmhu+fIQFCODqZM/cQA=
+		</data>
+		<key>Frameworks/SDWebImage.framework/SDWebImage</key>
+		<data>
+		w8bTxjZGjNPcw2eWtOks76jdzOg=
+		</data>
+		<key>Frameworks/SDWebImage.framework/_CodeSignature/CodeResources</key>
+		<data>
+		LBYAL5SIKu+FDkQ02v3EWyWfIBk=
 		</data>
 		<key>Frameworks/SegueManager.framework/Info.plist</key>
 		<data>
@@ -222,7 +250,7 @@
 		</data>
 		<key>Frameworks/SegueManager.framework/SegueManager</key>
 		<data>
-		5RwL1rBCDwL498PRIP0DPdEr5AM=
+		oXjYOtOb62i6zXNRMFwANSlfwRg=
 		</data>
 		<key>Frameworks/SegueManager.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -234,7 +262,7 @@
 		</data>
 		<key>Frameworks/SnapKit.framework/SnapKit</key>
 		<data>
-		ArBVxt4JTQ32PPyt9CfiNJexdjQ=
+		8go63wmYe8De6bqKtqi/4v3LuxM=
 		</data>
 		<key>Frameworks/SnapKit.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -453,6 +481,10 @@
 		<data>
 		ThntqC66cFPNXIddGS8WsV2tseA=
 		</data>
+		<key>Frameworks/libswiftCoreLocation.dylib</key>
+		<data>
+		kwRpJFKhS5JjgvKxjRfI8ytCfBI=
+		</data>
 		<key>Frameworks/libswiftCoreMedia.dylib</key>
 		<data>
 		vLqei00JENMylIFlYxxcs3SZpX0=
@@ -468,6 +500,10 @@
 		<key>Frameworks/libswiftFoundation.dylib</key>
 		<data>
 		+dnhcDFiiiuS0bBTuZAkTpvbVyY=
+		</data>
+		<key>Frameworks/libswiftMapKit.dylib</key>
+		<data>
+		AWqS4k2uLpdq370gMyiIwxid4XU=
 		</data>
 		<key>Frameworks/libswiftObjectiveC.dylib</key>
 		<data>
@@ -491,7 +527,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		nOdT0KvoSgGmO9Cfbt16eEEU804=
+		2u9bTZk5Yi//qsHBc4ti+j9HtCY=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -499,11 +535,11 @@
 		</data>
 		<key>PlugIns/CarTrackAppTests.xctest/CarTrackAppTests</key>
 		<data>
-		QsSKpb0J42e1SoqGAmCQq1x9Pns=
+		XkybfI1NfbJC7RLmGcrWRQL3iSo=
 		</data>
 		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/Alamofire.framework/Alamofire</key>
 		<data>
-		ALBZyzKJipGdc22wPIDFyIWyPzI=
+		GwNP3olkFBbjbvaqZknQfXlUZ4c=
 		</data>
 		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/Alamofire.framework/Info.plist</key>
 		<data>
@@ -515,7 +551,7 @@
 		</data>
 		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/Hex.framework/Hex</key>
 		<data>
-		h7L1lJQBfnna15RmT9V4lhRUEMc=
+		tiE3AY79nTCYD1W6s/E847zUGMU=
 		</data>
 		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/Hex.framework/Info.plist</key>
 		<data>
@@ -603,7 +639,7 @@
 		</data>
 		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/IQKeyboardManagerSwift.framework/IQKeyboardManagerSwift</key>
 		<data>
-		KlRAk0Sm2OBypmBE0U+Vv2mSTo0=
+		l+TYZnbCORtvyasJGDE0wcLUOro=
 		</data>
 		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/IQKeyboardManagerSwift.framework/Info.plist</key>
 		<data>
@@ -619,7 +655,7 @@
 		</data>
 		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/RSKPlaceholderTextView.framework/RSKPlaceholderTextView</key>
 		<data>
-		BpLnn32UMWDnn3h/tPIzCoWn210=
+		4B1d82NdphPboJi7O+1185lzAck=
 		</data>
 		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/RSKPlaceholderTextView.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -631,7 +667,7 @@
 		</data>
 		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/Reachability.framework/Reachability</key>
 		<data>
-		lnC8nU/iNJbnM3N4KN9iNg23I9s=
+		1LB2eY3TGNu6E2TQURkag8Mu8qc=
 		</data>
 		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/Reachability.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -643,7 +679,7 @@
 		</data>
 		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/Realm.framework/Realm</key>
 		<data>
-		wYQajkArWuEB7eckdyi7hZuhWu4=
+		QloLDazoBBvprTPQ5sZkuxKpGMI=
 		</data>
 		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/Realm.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -655,7 +691,7 @@
 		</data>
 		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/RealmSwift.framework/RealmSwift</key>
 		<data>
-		UC/RHf0GSFS5kH2AP1I4gxW6QYI=
+		r5AtR71a53Suh5ugKJDIk5Pm/2o=
 		</data>
 		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/RealmSwift.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -667,11 +703,23 @@
 		</data>
 		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/Rswift.framework/Rswift</key>
 		<data>
-		cSiVMabOTBO8Hw8r83V5dWVtYE8=
+		T/H2+2XwligSmSZ4VDbrVHMeSzw=
 		</data>
 		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/Rswift.framework/_CodeSignature/CodeResources</key>
 		<data>
 		za+0ldf35ZACXVfOztOposCYHg8=
+		</data>
+		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/SDWebImage.framework/Info.plist</key>
+		<data>
+		SV7/EwFoJmhu+fIQFCODqZM/cQA=
+		</data>
+		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/SDWebImage.framework/SDWebImage</key>
+		<data>
+		w8bTxjZGjNPcw2eWtOks76jdzOg=
+		</data>
+		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/SDWebImage.framework/_CodeSignature/CodeResources</key>
+		<data>
+		LBYAL5SIKu+FDkQ02v3EWyWfIBk=
 		</data>
 		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/SegueManager.framework/Info.plist</key>
 		<data>
@@ -679,7 +727,7 @@
 		</data>
 		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/SegueManager.framework/SegueManager</key>
 		<data>
-		5RwL1rBCDwL498PRIP0DPdEr5AM=
+		oXjYOtOb62i6zXNRMFwANSlfwRg=
 		</data>
 		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/SegueManager.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -691,7 +739,7 @@
 		</data>
 		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/SnapKit.framework/SnapKit</key>
 		<data>
-		ArBVxt4JTQ32PPyt9CfiNJexdjQ=
+		8go63wmYe8De6bqKtqi/4v3LuxM=
 		</data>
 		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/SnapKit.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -713,6 +761,10 @@
 		<data>
 		ThntqC66cFPNXIddGS8WsV2tseA=
 		</data>
+		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/libswiftCoreLocation.dylib</key>
+		<data>
+		kwRpJFKhS5JjgvKxjRfI8ytCfBI=
+		</data>
 		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/libswiftCoreMedia.dylib</key>
 		<data>
 		vLqei00JENMylIFlYxxcs3SZpX0=
@@ -728,6 +780,10 @@
 		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/libswiftFoundation.dylib</key>
 		<data>
 		+dnhcDFiiiuS0bBTuZAkTpvbVyY=
+		</data>
+		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/libswiftMapKit.dylib</key>
+		<data>
+		AWqS4k2uLpdq370gMyiIwxid4XU=
 		</data>
 		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/libswiftObjectiveC.dylib</key>
 		<data>
@@ -755,7 +811,7 @@
 		</data>
 		<key>PlugIns/CarTrackAppTests.xctest/_CodeSignature/CodeResources</key>
 		<data>
-		Y/NTHcAMZ1Nf1Fv5Fywx6g9zTaM=
+		I58D6OMTnbIXvL0cR2VEs7Ozs6U=
 		</data>
 		<key>PlugIns/CarTrackAppTests.xctest/libswiftRemoteMirror.dylib</key>
 		<data>
@@ -768,6 +824,17 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Assets.car</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZdsFV1UxH+Zb3oPU4iLFwZ8WDK8=
+			</data>
+			<key>hash2</key>
+			<data>
+			sCtLjOwRL8F2vLI22v7ULmaI9Bib+ev76FUkpop8KY4=
+			</data>
+		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash</key>
@@ -801,48 +868,81 @@
 			+41EOErRQLFAd8e7S7Qx9BUSVttnO6On3DSzSBSm91o=
 			</data>
 		</dict>
-		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
+		<key>Base.lproj/Main.storyboardc/70c-n1-mul-view-4Mm-i0-G2U.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			stWfgR+bGLHtZCMgY9jErden5Zk=
+			0jXbeHgxkpuRLjdIkiQHfrj97r0=
 			</data>
 			<key>hash2</key>
 			<data>
-			SQ1pXGlNhmb8oPO/nQlYZmidc11mE/XZfH/cvOwmEjI=
+			rBqih1AGQcf6/vKA8KjRaGrI9cW/gjTtMfvP+wHoeH4=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MDrKFvFWroTb0+KEbQShBcoBvo4=
+			wlNMFbQrQ8Zi6GvJgauVmdPf9ZM=
 			</data>
 			<key>hash2</key>
 			<data>
-			PpvapAjR62rl6Ym4E6hkTgpKmBICxTaQXeUqcpHmmqQ=
+			Wnl6M2OrywyNfWZbiCk08bHtQbcm/qHiqtAzYBbEvlk=
 			</data>
 		</dict>
-		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
+		<key>Base.lproj/Main.storyboardc/QoB-Wm-ntp-view-DVf-Ah-hl6.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Hj6vlxiTEb0Yo4a7jvwhl9YiWFA=
+			nk4qvVYYvmm91evMTGac+aH4lMI=
 			</data>
 			<key>hash2</key>
 			<data>
-			srxbENjuWZ+tnwuP+dvUuPturMu24J90D3K26SOgjn0=
+			pUQE6KFQb8/AoC5Sdz2czazk2m5/kWv498nbpXkpwOI=
+			</data>
+		</dict>
+		<key>Base.lproj/Main.storyboardc/UITabBarController-rTe-8q-U50.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lgx6YK7W3CvaQ/EO1zj5pOB3jqM=
+			</data>
+			<key>hash2</key>
+			<data>
+			0FZB+xDJ97Xj3l4v/PepHYvtuwGfs75aBee6M8ZyPVc=
+			</data>
+		</dict>
+		<key>Base.lproj/Main.storyboardc/UIViewController-70c-n1-mul.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			R/aA7RXRTA9wLmzi7n9NX2DgBFs=
+			</data>
+			<key>hash2</key>
+			<data>
+			3H1HE+QrcBdaOOQl+vTJdzplrrx7bL5ItKSaBiHDuqo=
+			</data>
+		</dict>
+		<key>Base.lproj/Main.storyboardc/vkx-BI-sku-view-4Pf-rH-jG0.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			flLQy9SrRVjj+TLH0cTw0/d8VgM=
+			</data>
+			<key>hash2</key>
+			<data>
+			GaVmPKgPiexo61tURzQSvsn+Wt9eIBgh7IdsuBAYl2c=
 			</data>
 		</dict>
 		<key>Frameworks/Alamofire.framework/Alamofire</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ALBZyzKJipGdc22wPIDFyIWyPzI=
+			GwNP3olkFBbjbvaqZknQfXlUZ4c=
 			</data>
 			<key>hash2</key>
 			<data>
-			TaXRdos5YwP11o1h17kq/Qh3384Hnnc66jUwO7XuGlY=
+			lKNiLxz7i/seVwJJfrLyGlCqNw8n8OktYX5zCcTK11o=
 			</data>
 		</dict>
 		<key>Frameworks/Alamofire.framework/Info.plist</key>
@@ -871,11 +971,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			h7L1lJQBfnna15RmT9V4lhRUEMc=
+			tiE3AY79nTCYD1W6s/E847zUGMU=
 			</data>
 			<key>hash2</key>
 			<data>
-			IyMUYXGm6Pze0CSMKCghIukPf8Omh74U8YdXKDq33g0=
+			TZZvHHmovmQeWz9aczQoqRbVFMsWQ/BWi8WayKQrG3g=
 			</data>
 		</dict>
 		<key>Frameworks/Hex.framework/Info.plist</key>
@@ -1110,11 +1210,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KlRAk0Sm2OBypmBE0U+Vv2mSTo0=
+			l+TYZnbCORtvyasJGDE0wcLUOro=
 			</data>
 			<key>hash2</key>
 			<data>
-			UHoFSBxJtHwckaTJPoLw+iwNH1748C95x6plVINPms0=
+			YbQISc/hPMaq0juuG9UwNGthQJFVHGlv7Kwv/OPyD5M=
 			</data>
 		</dict>
 		<key>Frameworks/IQKeyboardManagerSwift.framework/Info.plist</key>
@@ -1154,11 +1254,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BpLnn32UMWDnn3h/tPIzCoWn210=
+			4B1d82NdphPboJi7O+1185lzAck=
 			</data>
 			<key>hash2</key>
 			<data>
-			j1PibEz3aP/grIJQITFiARkOPmM0bRZ/rDw3H8VxtJA=
+			VvfZJ7EcMUIx71T4XOKWHsmqooyEBqJLTiczEiGWUKM=
 			</data>
 		</dict>
 		<key>Frameworks/RSKPlaceholderTextView.framework/_CodeSignature/CodeResources</key>
@@ -1187,11 +1287,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lnC8nU/iNJbnM3N4KN9iNg23I9s=
+			1LB2eY3TGNu6E2TQURkag8Mu8qc=
 			</data>
 			<key>hash2</key>
 			<data>
-			7vjDumX5dDnYRab3znhhC3+EkdULR3J2JMS7I/dWE1A=
+			t8pLFwmjYDB3ZIRmmxhI7ERBEL+OD5vUikcV7rJS+Ro=
 			</data>
 		</dict>
 		<key>Frameworks/Reachability.framework/_CodeSignature/CodeResources</key>
@@ -1220,11 +1320,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wYQajkArWuEB7eckdyi7hZuhWu4=
+			QloLDazoBBvprTPQ5sZkuxKpGMI=
 			</data>
 			<key>hash2</key>
 			<data>
-			3gfdp0TwJ0ucMryWDoczKeqOmdlib7rPljYmkGv5V8Y=
+			FKXLpFx54dpBaAaSZCm6rl3gK+HfwfyKWwmco8KJNy8=
 			</data>
 		</dict>
 		<key>Frameworks/Realm.framework/_CodeSignature/CodeResources</key>
@@ -1253,11 +1353,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UC/RHf0GSFS5kH2AP1I4gxW6QYI=
+			r5AtR71a53Suh5ugKJDIk5Pm/2o=
 			</data>
 			<key>hash2</key>
 			<data>
-			x+kLYtTO/vQcEtkF3/6VF3dP9xFq7fdydaVZG7ABlSg=
+			B3WS7AhP72JD5LrWuFmPUz/pFEBTZLpjDO6yiBsX20w=
 			</data>
 		</dict>
 		<key>Frameworks/RealmSwift.framework/_CodeSignature/CodeResources</key>
@@ -1286,11 +1386,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cSiVMabOTBO8Hw8r83V5dWVtYE8=
+			T/H2+2XwligSmSZ4VDbrVHMeSzw=
 			</data>
 			<key>hash2</key>
 			<data>
-			OyQno9bvTu7jVPowmNubdKwHpHizWdYzXHBJLmpwrBg=
+			6hm4MSiYi4kEgm5ZBfhbdCZIoAETeiyewsHxAA4uH9M=
 			</data>
 		</dict>
 		<key>Frameworks/Rswift.framework/_CodeSignature/CodeResources</key>
@@ -1302,6 +1402,39 @@
 			<key>hash2</key>
 			<data>
 			0hTcfjMc4rocrPhtBUx91ajNNQ/9jR/3ehnPyZXWmr0=
+			</data>
+		</dict>
+		<key>Frameworks/SDWebImage.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SV7/EwFoJmhu+fIQFCODqZM/cQA=
+			</data>
+			<key>hash2</key>
+			<data>
+			vRCHApEwohBkHuTHw2TQtsTeY2pWvBHFgoLaovR7gdw=
+			</data>
+		</dict>
+		<key>Frameworks/SDWebImage.framework/SDWebImage</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			w8bTxjZGjNPcw2eWtOks76jdzOg=
+			</data>
+			<key>hash2</key>
+			<data>
+			gEgSjA872j0Y3IvXGfm/vKn6bX9HiVDmmFO9dTk+uxg=
+			</data>
+		</dict>
+		<key>Frameworks/SDWebImage.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LBYAL5SIKu+FDkQ02v3EWyWfIBk=
+			</data>
+			<key>hash2</key>
+			<data>
+			6xMTeUksz5WYIFagJuqMh0iZ5XzkLM5p16gXZyZa5IU=
 			</data>
 		</dict>
 		<key>Frameworks/SegueManager.framework/Info.plist</key>
@@ -1319,11 +1452,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5RwL1rBCDwL498PRIP0DPdEr5AM=
+			oXjYOtOb62i6zXNRMFwANSlfwRg=
 			</data>
 			<key>hash2</key>
 			<data>
-			CyvcV97kr1pSRJUkwzerPhBvw+Ss0eflxjRAkvv1u5A=
+			i5Uk7e5E/uSKO4z/Ul31JNfWfMwSH4Pvg7PyVLGpD+Y=
 			</data>
 		</dict>
 		<key>Frameworks/SegueManager.framework/_CodeSignature/CodeResources</key>
@@ -1352,11 +1485,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ArBVxt4JTQ32PPyt9CfiNJexdjQ=
+			8go63wmYe8De6bqKtqi/4v3LuxM=
 			</data>
 			<key>hash2</key>
 			<data>
-			/I/ibCNSBCWUHPxTH4t9lBi7uBokyun9pOAJ9hkPCLs=
+			tgctU4OxsrqVIyksimkJ9pK13GOg3F/GZMv09UbZNCc=
 			</data>
 		</dict>
 		<key>Frameworks/SnapKit.framework/_CodeSignature/CodeResources</key>
@@ -1944,6 +2077,17 @@
 			+6Af8mHdk7zRH9iGcxqjnofA2+j+Q6L9Yq5Do0QNwh0=
 			</data>
 		</dict>
+		<key>Frameworks/libswiftCoreLocation.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kwRpJFKhS5JjgvKxjRfI8ytCfBI=
+			</data>
+			<key>hash2</key>
+			<data>
+			OSsioTmGOU5Xhgd3Y2bvfapoMhUGuuu2ea5cvG5N8nE=
+			</data>
+		</dict>
 		<key>Frameworks/libswiftCoreMedia.dylib</key>
 		<dict>
 			<key>hash</key>
@@ -1986,6 +2130,17 @@
 			<key>hash2</key>
 			<data>
 			wMCAGdHEJ7CUiufdzJg1EM6gwM583hWbiTDgAarYnYQ=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftMapKit.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AWqS4k2uLpdq370gMyiIwxid4XU=
+			</data>
+			<key>hash2</key>
+			<data>
+			kLGSe6A09SuI5S2AE7J5frxD7VY6UbEHalTRv8joyhs=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftObjectiveC.dylib</key>
@@ -2047,22 +2202,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QsSKpb0J42e1SoqGAmCQq1x9Pns=
+			XkybfI1NfbJC7RLmGcrWRQL3iSo=
 			</data>
 			<key>hash2</key>
 			<data>
-			2vu5N1jWze55jjCne2AWn3Q0c2ZRYXFBXHztZav/oIE=
+			NlVI7VVQRrIrz/4p0dNU4YNFjCMaiBVNsDjH98mDvWw=
 			</data>
 		</dict>
 		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/Alamofire.framework/Alamofire</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ALBZyzKJipGdc22wPIDFyIWyPzI=
+			GwNP3olkFBbjbvaqZknQfXlUZ4c=
 			</data>
 			<key>hash2</key>
 			<data>
-			TaXRdos5YwP11o1h17kq/Qh3384Hnnc66jUwO7XuGlY=
+			lKNiLxz7i/seVwJJfrLyGlCqNw8n8OktYX5zCcTK11o=
 			</data>
 		</dict>
 		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/Alamofire.framework/Info.plist</key>
@@ -2091,11 +2246,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			h7L1lJQBfnna15RmT9V4lhRUEMc=
+			tiE3AY79nTCYD1W6s/E847zUGMU=
 			</data>
 			<key>hash2</key>
 			<data>
-			IyMUYXGm6Pze0CSMKCghIukPf8Omh74U8YdXKDq33g0=
+			TZZvHHmovmQeWz9aczQoqRbVFMsWQ/BWi8WayKQrG3g=
 			</data>
 		</dict>
 		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/Hex.framework/Info.plist</key>
@@ -2286,11 +2441,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KlRAk0Sm2OBypmBE0U+Vv2mSTo0=
+			l+TYZnbCORtvyasJGDE0wcLUOro=
 			</data>
 			<key>hash2</key>
 			<data>
-			UHoFSBxJtHwckaTJPoLw+iwNH1748C95x6plVINPms0=
+			YbQISc/hPMaq0juuG9UwNGthQJFVHGlv7Kwv/OPyD5M=
 			</data>
 		</dict>
 		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/IQKeyboardManagerSwift.framework/Info.plist</key>
@@ -2330,11 +2485,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BpLnn32UMWDnn3h/tPIzCoWn210=
+			4B1d82NdphPboJi7O+1185lzAck=
 			</data>
 			<key>hash2</key>
 			<data>
-			j1PibEz3aP/grIJQITFiARkOPmM0bRZ/rDw3H8VxtJA=
+			VvfZJ7EcMUIx71T4XOKWHsmqooyEBqJLTiczEiGWUKM=
 			</data>
 		</dict>
 		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/RSKPlaceholderTextView.framework/_CodeSignature/CodeResources</key>
@@ -2363,11 +2518,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lnC8nU/iNJbnM3N4KN9iNg23I9s=
+			1LB2eY3TGNu6E2TQURkag8Mu8qc=
 			</data>
 			<key>hash2</key>
 			<data>
-			7vjDumX5dDnYRab3znhhC3+EkdULR3J2JMS7I/dWE1A=
+			t8pLFwmjYDB3ZIRmmxhI7ERBEL+OD5vUikcV7rJS+Ro=
 			</data>
 		</dict>
 		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/Reachability.framework/_CodeSignature/CodeResources</key>
@@ -2396,11 +2551,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wYQajkArWuEB7eckdyi7hZuhWu4=
+			QloLDazoBBvprTPQ5sZkuxKpGMI=
 			</data>
 			<key>hash2</key>
 			<data>
-			3gfdp0TwJ0ucMryWDoczKeqOmdlib7rPljYmkGv5V8Y=
+			FKXLpFx54dpBaAaSZCm6rl3gK+HfwfyKWwmco8KJNy8=
 			</data>
 		</dict>
 		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/Realm.framework/_CodeSignature/CodeResources</key>
@@ -2429,11 +2584,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UC/RHf0GSFS5kH2AP1I4gxW6QYI=
+			r5AtR71a53Suh5ugKJDIk5Pm/2o=
 			</data>
 			<key>hash2</key>
 			<data>
-			x+kLYtTO/vQcEtkF3/6VF3dP9xFq7fdydaVZG7ABlSg=
+			B3WS7AhP72JD5LrWuFmPUz/pFEBTZLpjDO6yiBsX20w=
 			</data>
 		</dict>
 		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/RealmSwift.framework/_CodeSignature/CodeResources</key>
@@ -2462,11 +2617,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cSiVMabOTBO8Hw8r83V5dWVtYE8=
+			T/H2+2XwligSmSZ4VDbrVHMeSzw=
 			</data>
 			<key>hash2</key>
 			<data>
-			OyQno9bvTu7jVPowmNubdKwHpHizWdYzXHBJLmpwrBg=
+			6hm4MSiYi4kEgm5ZBfhbdCZIoAETeiyewsHxAA4uH9M=
 			</data>
 		</dict>
 		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/Rswift.framework/_CodeSignature/CodeResources</key>
@@ -2478,6 +2633,39 @@
 			<key>hash2</key>
 			<data>
 			0hTcfjMc4rocrPhtBUx91ajNNQ/9jR/3ehnPyZXWmr0=
+			</data>
+		</dict>
+		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/SDWebImage.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SV7/EwFoJmhu+fIQFCODqZM/cQA=
+			</data>
+			<key>hash2</key>
+			<data>
+			vRCHApEwohBkHuTHw2TQtsTeY2pWvBHFgoLaovR7gdw=
+			</data>
+		</dict>
+		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/SDWebImage.framework/SDWebImage</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			w8bTxjZGjNPcw2eWtOks76jdzOg=
+			</data>
+			<key>hash2</key>
+			<data>
+			gEgSjA872j0Y3IvXGfm/vKn6bX9HiVDmmFO9dTk+uxg=
+			</data>
+		</dict>
+		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/SDWebImage.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LBYAL5SIKu+FDkQ02v3EWyWfIBk=
+			</data>
+			<key>hash2</key>
+			<data>
+			6xMTeUksz5WYIFagJuqMh0iZ5XzkLM5p16gXZyZa5IU=
 			</data>
 		</dict>
 		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/SegueManager.framework/Info.plist</key>
@@ -2495,11 +2683,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5RwL1rBCDwL498PRIP0DPdEr5AM=
+			oXjYOtOb62i6zXNRMFwANSlfwRg=
 			</data>
 			<key>hash2</key>
 			<data>
-			CyvcV97kr1pSRJUkwzerPhBvw+Ss0eflxjRAkvv1u5A=
+			i5Uk7e5E/uSKO4z/Ul31JNfWfMwSH4Pvg7PyVLGpD+Y=
 			</data>
 		</dict>
 		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/SegueManager.framework/_CodeSignature/CodeResources</key>
@@ -2528,11 +2716,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ArBVxt4JTQ32PPyt9CfiNJexdjQ=
+			8go63wmYe8De6bqKtqi/4v3LuxM=
 			</data>
 			<key>hash2</key>
 			<data>
-			/I/ibCNSBCWUHPxTH4t9lBi7uBokyun9pOAJ9hkPCLs=
+			tgctU4OxsrqVIyksimkJ9pK13GOg3F/GZMv09UbZNCc=
 			</data>
 		</dict>
 		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/SnapKit.framework/_CodeSignature/CodeResources</key>
@@ -2590,6 +2778,17 @@
 			+6Af8mHdk7zRH9iGcxqjnofA2+j+Q6L9Yq5Do0QNwh0=
 			</data>
 		</dict>
+		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/libswiftCoreLocation.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kwRpJFKhS5JjgvKxjRfI8ytCfBI=
+			</data>
+			<key>hash2</key>
+			<data>
+			OSsioTmGOU5Xhgd3Y2bvfapoMhUGuuu2ea5cvG5N8nE=
+			</data>
+		</dict>
 		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/libswiftCoreMedia.dylib</key>
 		<dict>
 			<key>hash</key>
@@ -2632,6 +2831,17 @@
 			<key>hash2</key>
 			<data>
 			wMCAGdHEJ7CUiufdzJg1EM6gwM583hWbiTDgAarYnYQ=
+			</data>
+		</dict>
+		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/libswiftMapKit.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AWqS4k2uLpdq370gMyiIwxid4XU=
+			</data>
+			<key>hash2</key>
+			<data>
+			kLGSe6A09SuI5S2AE7J5frxD7VY6UbEHalTRv8joyhs=
 			</data>
 		</dict>
 		<key>PlugIns/CarTrackAppTests.xctest/Frameworks/libswiftObjectiveC.dylib</key>
@@ -2704,11 +2914,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Y/NTHcAMZ1Nf1Fv5Fywx6g9zTaM=
+			I58D6OMTnbIXvL0cR2VEs7Ozs6U=
 			</data>
 			<key>hash2</key>
 			<data>
-			P5DblZoiFsBz1+Jhs1ZOrdsN7IcA/cJHVIpjU344wPU=
+			qXf/sX6eUBx9ysdtFZ/0UMuNWl5aYn6LlC3PmyoS4UA=
 			</data>
 		</dict>
 		<key>PlugIns/CarTrackAppTests.xctest/libswiftRemoteMirror.dylib</key>

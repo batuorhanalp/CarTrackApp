@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		22AF0A1803FF73D317DB325A /* Pods_CarTrackApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C8AFE5CF51E83E22D34721 /* Pods_CarTrackApp.framework */; };
+		4712A4631ECD95F400C86CB8 /* MapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4712A4621ECD95F400C86CB8 /* MapAnnotation.swift */; };
 		4714CC911ECB370C00AABB9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4714CC901ECB370C00AABB9C /* AppDelegate.swift */; };
 		4714CCB11ECB370C00AABB9C /* CarTrackAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4714CCB01ECB370C00AABB9C /* CarTrackAppUITests.swift */; };
 		4714CCC81ECB392D00AABB9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4714CCC11ECB392D00AABB9C /* LaunchScreen.storyboard */; };
@@ -20,6 +21,16 @@
 		4714CCD71ECB524A00AABB9C /* AlamofireExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4714CCD61ECB524A00AABB9C /* AlamofireExtension.swift */; };
 		4714CCDA1ECB55EB00AABB9C /* CarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4714CCD91ECB55EB00AABB9C /* CarTests.swift */; };
 		4714CCDD1ECB5AD100AABB9C /* CarServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4714CCDC1ECB5AD100AABB9C /* CarServiceTests.swift */; };
+		476735F31ECCC05B0088C0DC /* RealmExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476735F21ECCC05B0088C0DC /* RealmExtension.swift */; };
+		476735F51ECCC46B0088C0DC /* CarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476735F41ECCC46B0088C0DC /* CarTableViewCell.swift */; };
+		476735F91ECCC4AF0088C0DC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476735F81ECCC4AF0088C0DC /* BaseViewController.swift */; };
+		476735FB1ECCC4BD0088C0DC /* CarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476735FA1ECCC4BD0088C0DC /* CarTableViewController.swift */; };
+		476735FD1ECCC4CA0088C0DC /* CarMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476735FC1ECCC4CA0088C0DC /* CarMapViewController.swift */; };
+		476736001ECCC8D80088C0DC /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476735FF1ECCC8D80088C0DC /* R.generated.swift */; };
+		476736021ECCD1E80088C0DC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476736011ECCD1E80088C0DC /* DetailViewController.swift */; };
+		476736041ECCD6E70088C0DC /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476736031ECCD6E70088C0DC /* LocationManager.swift */; };
+		476736061ECCD75F0088C0DC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 476736051ECCD75F0088C0DC /* CoreLocation.framework */; };
+		476736091ECD8BFA0088C0DC /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476736081ECD8BFA0088C0DC /* LocationTests.swift */; };
 		607745C4D1806AB3186D0DB5 /* Pods_CarTrackAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5387B2E61016235D6E13EFA /* Pods_CarTrackAppUITests.framework */; };
 		71DCC58A5555D59768FD6426 /* Pods_CarTrackAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7254D7DE2B57FC7D048F3E3 /* Pods_CarTrackAppTests.framework */; };
 /* End PBXBuildFile section */
@@ -45,6 +56,7 @@
 		0C2FEAE461661117C80B3139 /* Pods-CarTrackApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarTrackApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarTrackApp/Pods-CarTrackApp.release.xcconfig"; sourceTree = "<group>"; };
 		13D6B32EBD80B4180AC0E728 /* Pods-CarTrackAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarTrackAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarTrackAppTests/Pods-CarTrackAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		342CE0E92D7013B1333492A2 /* Pods-CarTrackAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarTrackAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarTrackAppUITests/Pods-CarTrackAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4712A4621ECD95F400C86CB8 /* MapAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapAnnotation.swift; sourceTree = "<group>"; };
 		4714CC8D1ECB370C00AABB9C /* CarTrackApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarTrackApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4714CC901ECB370C00AABB9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4714CCA11ECB370C00AABB9C /* CarTrackAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarTrackAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +74,16 @@
 		4714CCD61ECB524A00AABB9C /* AlamofireExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlamofireExtension.swift; path = Extensions/AlamofireExtension.swift; sourceTree = "<group>"; };
 		4714CCD91ECB55EB00AABB9C /* CarTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarTests.swift; path = ModelTests/CarTests.swift; sourceTree = "<group>"; };
 		4714CCDC1ECB5AD100AABB9C /* CarServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarServiceTests.swift; path = ServiceTests/CarServiceTests.swift; sourceTree = "<group>"; };
+		476735F21ECCC05B0088C0DC /* RealmExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmExtension.swift; path = Extensions/RealmExtension.swift; sourceTree = "<group>"; };
+		476735F41ECCC46B0088C0DC /* CarTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarTableViewCell.swift; sourceTree = "<group>"; };
+		476735F81ECCC4AF0088C0DC /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		476735FA1ECCC4BD0088C0DC /* CarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarTableViewController.swift; sourceTree = "<group>"; };
+		476735FC1ECCC4CA0088C0DC /* CarMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarMapViewController.swift; sourceTree = "<group>"; };
+		476735FF1ECCC8D80088C0DC /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		476736011ECCD1E80088C0DC /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		476736031ECCD6E70088C0DC /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationManager.swift; path = Helpers/LocationManager.swift; sourceTree = "<group>"; };
+		476736051ECCD75F0088C0DC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		476736081ECD8BFA0088C0DC /* LocationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationTests.swift; path = HelperTests/LocationTests.swift; sourceTree = "<group>"; };
 		86CF813617EA53D216B3B887 /* Pods-CarTrackAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarTrackAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarTrackAppUITests/Pods-CarTrackAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		93375CEDC0F5E1626D87CD4D /* Pods-CarTrackAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarTrackAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarTrackAppTests/Pods-CarTrackAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		96C8AFE5CF51E83E22D34721 /* Pods_CarTrackApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarTrackApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				476736061ECCD75F0088C0DC /* CoreLocation.framework in Frameworks */,
 				22AF0A1803FF73D317DB325A /* Pods_CarTrackApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,6 +124,7 @@
 		40C704D4D10F594BDDA8B819 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				476736051ECCD75F0088C0DC /* CoreLocation.framework */,
 				96C8AFE5CF51E83E22D34721 /* Pods_CarTrackApp.framework */,
 				F7254D7DE2B57FC7D048F3E3 /* Pods_CarTrackAppTests.framework */,
 				B5387B2E61016235D6E13EFA /* Pods_CarTrackAppUITests.framework */,
@@ -135,7 +159,7 @@
 			children = (
 				4714CCD51ECB523300AABB9C /* Extensions */,
 				4714CCD01ECB49C400AABB9C /* Services */,
-				4714CCCD1ECB493500AABB9C /* Libraries */,
+				4714CCCD1ECB493500AABB9C /* Helpers */,
 				4714CCBF1ECB392D00AABB9C /* Models */,
 				4714CCC71ECB392D00AABB9C /* Views */,
 				4714CCBE1ECB392D00AABB9C /* Controllers */,
@@ -149,6 +173,7 @@
 		4714CCA41ECB370C00AABB9C /* CarTrackAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				476736071ECD8BE50088C0DC /* Helper Tests */,
 				4714CCDB1ECB5AB600AABB9C /* Service Tests */,
 				4714CCD81ECB55C600AABB9C /* Model Tests */,
 				4714CCA71ECB370C00AABB9C /* Info.plist */,
@@ -168,6 +193,10 @@
 		4714CCBE1ECB392D00AABB9C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				476735F81ECCC4AF0088C0DC /* BaseViewController.swift */,
+				476735FA1ECCC4BD0088C0DC /* CarTableViewController.swift */,
+				476735FC1ECCC4CA0088C0DC /* CarMapViewController.swift */,
+				476736011ECCD1E80088C0DC /* DetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -193,6 +222,7 @@
 		4714CCC51ECB392D00AABB9C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				476735FF1ECCC8D80088C0DC /* R.generated.swift */,
 				4714CCCB1ECB39A700AABB9C /* Info.plist */,
 				4714CCC61ECB392D00AABB9C /* Assets.xcassets */,
 			);
@@ -203,15 +233,18 @@
 		4714CCC71ECB392D00AABB9C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				476735F41ECCC46B0088C0DC /* CarTableViewCell.swift */,
+				4712A4621ECD95F400C86CB8 /* MapAnnotation.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		4714CCCD1ECB493500AABB9C /* Libraries */ = {
+		4714CCCD1ECB493500AABB9C /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				476736031ECCD6E70088C0DC /* LocationManager.swift */,
 			);
-			name = Libraries;
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		4714CCD01ECB49C400AABB9C /* Services */ = {
@@ -227,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				4714CCD61ECB524A00AABB9C /* AlamofireExtension.swift */,
+				476735F21ECCC05B0088C0DC /* RealmExtension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -245,6 +279,14 @@
 				4714CCDC1ECB5AD100AABB9C /* CarServiceTests.swift */,
 			);
 			name = "Service Tests";
+			sourceTree = "<group>";
+		};
+		476736071ECD8BE50088C0DC /* Helper Tests */ = {
+			isa = PBXGroup;
+			children = (
+				476736081ECD8BFA0088C0DC /* LocationTests.swift */,
+			);
+			name = "Helper Tests";
 			sourceTree = "<group>";
 		};
 		78E3FBF99E50511CF2F9422F /* Pods */ = {
@@ -268,6 +310,7 @@
 			buildConfigurationList = 4714CCB51ECB370C00AABB9C /* Build configuration list for PBXNativeTarget "CarTrackApp" */;
 			buildPhases = (
 				8924F1A72A46E1748B259584 /* [CP] Check Pods Manifest.lock */,
+				476735FE1ECCC8720088C0DC /* ShellScript */,
 				4714CC891ECB370C00AABB9C /* Sources */,
 				4714CC8A1ECB370C00AABB9C /* Frameworks */,
 				4714CC8B1ECB370C00AABB9C /* Resources */,
@@ -418,6 +461,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarTrackAppUITests/Pods-CarTrackAppUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		476735FE1ECCC8720088C0DC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" \"$SRCROOT/CarTrackApp/SupportingFiles\"";
+		};
 		6AE7BAE7ACA742E0CF8D03FF /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -546,9 +602,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				4714CCCF1ECB496300AABB9C /* Car.swift in Sources */,
+				476735FB1ECCC4BD0088C0DC /* CarTableViewController.swift in Sources */,
+				476735F51ECCC46B0088C0DC /* CarTableViewCell.swift in Sources */,
+				476736021ECCD1E80088C0DC /* DetailViewController.swift in Sources */,
 				4714CCD71ECB524A00AABB9C /* AlamofireExtension.swift in Sources */,
+				476735FD1ECCC4CA0088C0DC /* CarMapViewController.swift in Sources */,
+				476736041ECCD6E70088C0DC /* LocationManager.swift in Sources */,
 				4714CCD21ECB4F3D00AABB9C /* Router.swift in Sources */,
+				476735F31ECCC05B0088C0DC /* RealmExtension.swift in Sources */,
+				4712A4631ECD95F400C86CB8 /* MapAnnotation.swift in Sources */,
+				476735F91ECCC4AF0088C0DC /* BaseViewController.swift in Sources */,
 				4714CCD41ECB517200AABB9C /* CarService.swift in Sources */,
+				476736001ECCC8D80088C0DC /* R.generated.swift in Sources */,
 				4714CC911ECB370C00AABB9C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -558,6 +623,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4714CCDA1ECB55EB00AABB9C /* CarTests.swift in Sources */,
+				476736091ECD8BFA0088C0DC /* LocationTests.swift in Sources */,
 				4714CCDD1ECB5AD100AABB9C /* CarServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
