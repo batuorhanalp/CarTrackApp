@@ -26,8 +26,7 @@ class SixtCarPin: NSObject, MKAnnotation {
         super.init()
     }
     
-    // Annotation call when touched on point
-    
+    // Annotation will be called when touched on pin
     func mapItem() -> MKMapItem {
         
         let infoDictionary = [CNPostalAddressStreetKey: subtitle!]

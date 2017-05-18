@@ -11,6 +11,7 @@ import MapKit
 
 class CarMapViewController: BaseViewController {
     
+    var selectedPin: SixtCarPin?
     var locationManager = LocationManager.sharedInstance
     
     @IBOutlet weak var mapView: MKMapView!
@@ -52,5 +53,12 @@ class CarMapViewController: BaseViewController {
         }
         
         mapView.addAnnotations(sixtPins)
+    }
+    
+    // MARK - segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let detailViewController = segue.destination as? DetailViewController {
+            detailViewController.car = self.selectedPin?.car
+        }
     }
 }

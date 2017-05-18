@@ -206,18 +206,22 @@ SWIFT_CLASS("_TtC11CarTrackApp3Car")
 - (nonnull instancetype)initWithValue:(id _Nonnull)value schema:(RLMSchema * _Nonnull)schema OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class SixtCarPin;
 @class LocationManager;
 @class MKMapView;
 @class CLLocation;
+@class UIStoryboardSegue;
 
 SWIFT_CLASS("_TtC11CarTrackApp20CarMapViewController")
 @interface CarMapViewController : BaseViewController
+@property (nonatomic, strong) SixtCarPin * _Nullable selectedPin;
 @property (nonatomic, strong) LocationManager * _Nonnull locationManager;
 @property (nonatomic, weak) IBOutlet MKMapView * _Null_unspecified mapView;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)startMapWithLocation:(CLLocation * _Nullable)location;
 - (void)generatePins;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -247,7 +251,6 @@ SWIFT_CLASS("_TtC11CarTrackApp16CarTableViewCell")
 @end
 
 @class UITableView;
-@class UIStoryboardSegue;
 
 SWIFT_CLASS("_TtC11CarTrackApp22CarTableViewController")
 @interface CarTableViewController : BaseViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>

@@ -32,9 +32,11 @@ extension CarMapViewController: MKMapViewDelegate {
     }
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
-        let location = view.annotation as! SixtCarPin
-        let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving]
-        location.mapItem().openInMaps(launchOptions: launchOptions)
+        
+        self.selectedPin = view.annotation as? SixtCarPin
+        
+        self.performSegue(withIdentifier: R.segue.carTableViewController.detailSegue.identifier, sender: self)
+        
     }
     
 }
