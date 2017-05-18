@@ -1,8 +1,8 @@
 version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
 options: "5412bd08e1a25cc71f53059cfc7cc8ca"
-build_time: [548421355, 141955000]
+build_time: [548422390, 398013000]
 inputs:
-  "/Users/batu/Desktop/CarTrackApp/CarTrackApp/Models/Car.swift": [548420810, 0]
+  "/Users/batu/Desktop/CarTrackApp/CarTrackApp/Models/Car.swift": [548422389, 0]
   "/Users/batu/Desktop/CarTrackApp/CarTrackApp/Controllers/CarTableViewController.swift": [548362963, 0]
   "/Users/batu/Desktop/CarTrackApp/CarTrackApp/Views/CarTableViewCell.swift": [548362881, 0]
   "/Users/batu/Desktop/CarTrackApp/CarTrackApp/Controllers/DetailViewController.swift": [548362399, 0]

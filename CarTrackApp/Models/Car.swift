@@ -98,7 +98,7 @@ final class Car: Object, DataSource, ResponseObjectSerializable, ResponseCollect
     
     static func get(id: Any) -> Car? {
         let realm = try! Realm()
-        return realm.objects(Car.self).filter({ $0.id == id as! String }).first
+        return realm.objects(Car.self).filter("id == '\(id)'").first
     }
 
 }
