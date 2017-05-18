@@ -1,5 +1,7 @@
 # CarTrackApp
 
+https://travis-ci.org/batuorhanalp/CarTrackApp.svg?branch=master
+
 iOS project for Sixt
 
 ## Installation
