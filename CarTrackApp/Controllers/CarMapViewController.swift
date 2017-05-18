@@ -32,6 +32,7 @@ class CarMapViewController: BaseViewController {
         
         var currentLocation = location
         
+        // If the current location is nil we start with the demo location
         if currentLocation == nil {
             currentLocation = CLLocation(latitude: 48.134557, longitude: 11.576921)
         }

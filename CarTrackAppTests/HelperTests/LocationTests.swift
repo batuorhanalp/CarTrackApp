@@ -15,7 +15,7 @@ class LocationTests: XCTestCase {
         
         let locationManager = LocationManager.sharedInstance
         
-        XCTAssertNotNil(locationManager.location)
+        XCTAssertNotNil(locationManager)
     }
 }
 

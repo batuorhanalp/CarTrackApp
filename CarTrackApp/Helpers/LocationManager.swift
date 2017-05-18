@@ -10,6 +10,7 @@ import MapKit
 
 class LocationManager: NSObject, CLLocationManagerDelegate {
     
+    
     static let sharedInstance = LocationManager()
     private var locationManager = CLLocationManager()
     
@@ -28,7 +29,5 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
     
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
         self.location = manager.location
-        
     }
 }
-
