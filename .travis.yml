@@ -1,7 +1,9 @@
 language: swift
 osx_image: xcode8.3
 before_install:
-- pod install
+  - pod install
+  - brew update
+  - brew install xctool
 xcode_project: CarTrackApp.xcworkspace
 xcode_scheme: CarTrackApp
 xcode_sdk: iphonesimulator10.3
