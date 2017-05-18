@@ -36,7 +36,7 @@ class CarMapViewController: BaseViewController {
             currentLocation = CLLocation(latitude: 48.134557, longitude: 11.576921)
         }
         
-        let regionRadius: CLLocationDistance = 100
+        let regionRadius: CLLocationDistance = 800
         
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(currentLocation!.coordinate, regionRadius * 2.0, regionRadius * 2.0)
         mapView.setRegion(coordinateRegion, animated: true)
