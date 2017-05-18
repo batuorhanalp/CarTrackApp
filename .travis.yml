@@ -5,6 +5,4 @@ before_install:
 xcode_project: CarTrackApp.xcworkspace
 xcode_scheme: CarTrackApp
 xcode_sdk: iphonesimulator10.3
-script:
-  - xctool -workspace CarTrackApp.xcworkspace -scheme CarTrackApp -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
-  - xctool test -workspace CarTrackApp.xcworkspace -scheme CarTrackAppTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+script: xctool -workspace CarTrackApp.xcworkspace -scheme CarTrackApp test
