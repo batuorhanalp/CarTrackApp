@@ -1,13 +1,9 @@
 language: swift
 osx_image: xcode8.3
+cache: cocoapods
 before_install:
-  - pod install
-  - brew update
-  - brew install xctool
-xcode_project: CarTrackApp.xcworkspace
+- gem install cocoapods
+- pod install
+xcode_project: CarTrackApp.xcodeworkspace
 xcode_scheme: CarTrackApp
 xcode_sdk: iphonesimulator10.3
-language: objective-c
-script:
-  - xctool -workspace CarTrackApp.xcworkspace -scheme CarTrackApp -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
-  - xctool test -workspace CarTrackApp.xcworkspace -scheme CarTrackAppTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
