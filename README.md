@@ -4,6 +4,13 @@
 
 iOS project for Sixt
 
+## Prerequisites
+
+	Xcode 8.3
+	iOS 10+
+	Cocoapods
+
+
 ## Installation
 
 CarTrackApp is using pods. Issue following command to set up.
