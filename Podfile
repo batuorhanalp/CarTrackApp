@@ -1,5 +1,5 @@
 platform :ios, '10.0'
-# Uncomment this line if you're using Swift
+
 use_frameworks!
 
 def common_pods
@@ -9,10 +9,6 @@ def common_pods
     pod 'R.swift'
     pod 'SegueManager'
     pod 'SegueManager/R.swift'
-    pod 'Hex'
-    pod 'SnapKit'
-    pod 'IQKeyboardManagerSwift'
-    pod 'RSKPlaceholderTextView'
     pod 'SDWebImage'
 end
 
