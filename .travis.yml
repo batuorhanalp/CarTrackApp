@@ -1,11 +1,9 @@
-language: swift
+language: objective-c
 osx_image: xcode8.3
 cache: cocoapods
 before_install:
-- gem install cocoapods
-- pod install
-xcode_project: CarTrackApp.xcodeworkspace
-xcode_scheme: CarTrackApp
-xcode_sdk: iphonesimulator10.3
-script:
-  build.sh
+  - gem install cocoapods
+  - pod install
+xcode_workspace: CarTrackApp.xcodeworkspace
+xcode_scheme: CarTrackAppTests
+xcode_sdk: iphonesimulator10.3  
