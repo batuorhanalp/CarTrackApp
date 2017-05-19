@@ -8,4 +8,4 @@ xcode_project: CarTrackApp.xcodeworkspace
 xcode_scheme: CarTrackApp
 xcode_sdk: iphonesimulator10.3
 script:
-  ./build.sh
+  build.sh
