@@ -27,7 +27,18 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
         self.locationManager.startUpdatingLocation()
     }
     
-    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         self.location = manager.location
+    }
+    
+    func start() {
+                
+        if CLLocationManager.locationServicesEnabled() {
+           locationManager.startUpdatingLocation()
+        }
+    }
+    
+    func stop() {
+        locationManager.stopUpdatingLocation()
     }
 }

@@ -25,6 +25,9 @@ class CarMapViewController: BaseViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        
+        locationManager.start()
+        
         startMap(location: locationManager.location)
     }
     
@@ -42,6 +45,7 @@ class CarMapViewController: BaseViewController {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(currentLocation!.coordinate, regionRadius * 2.0, regionRadius * 2.0)
         mapView.setRegion(coordinateRegion, animated: true)
         
+        locationManager.stop()
     }
     
     // Generate pins for Sixt cars

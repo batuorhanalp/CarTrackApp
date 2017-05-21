@@ -34,6 +34,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
+        
+        LocationManager.sharedInstance.start()
+        
         CarService.get { (_) in
             // Cars updated from server
         }
