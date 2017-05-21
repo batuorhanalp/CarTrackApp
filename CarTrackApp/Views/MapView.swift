@@ -31,6 +31,7 @@ extension CarMapViewController: MKMapViewDelegate {
         return nil
     }
     
+    // Annotation create
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         
         self.selectedPin = view.annotation as? SixtCarPin
@@ -39,12 +40,27 @@ extension CarMapViewController: MKMapViewDelegate {
         
     }
     
+    // On annotation select
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         if let annotation = view.annotation {
             drawRoute(toDestination: annotation)
         }
     }
     
+    // Router overlay rendering
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+        if overlay is MKPolyline {
+            let lineView = MKPolylineRenderer(overlay: overlay)
+            lineView.strokeColor = UIColor.blue
+            lineView.lineWidth = 2
+            
+            return lineView
+        }
+        
+        return MKOverlayRenderer()
+    }
+    
+    // Getting route data
     func drawRoute(toDestination destination: MKAnnotation) {
         
         if let currentLocation = locationManager.location {
@@ -69,12 +85,14 @@ extension CarMapViewController: MKMapViewDelegate {
                 }
                 
                 let route = response.routes[0]
+                // First remove previous overlays
+                self.mapView.removeOverlays(self.mapView.overlays)
+                // Then add new ones
                 self.mapView.add((route.polyline), level: .aboveRoads)
-                
+            
                 let rect = route.polyline.boundingMapRect
                 self.mapView.setRegion(MKCoordinateRegionForMapRect(rect), animated: true)
             })
         }
     }
-    
 }
