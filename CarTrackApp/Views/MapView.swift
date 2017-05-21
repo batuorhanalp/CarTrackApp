@@ -39,4 +39,42 @@ extension CarMapViewController: MKMapViewDelegate {
         
     }
     
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        if let annotation = view.annotation {
+            drawRoute(toDestination: annotation)
+        }
+    }
+    
+    func drawRoute(toDestination destination: MKAnnotation) {
+        
+        if let currentLocation = locationManager.location {
+            
+            // Route direction request
+            let directionRequest = MKDirectionsRequest()
+            // From current location
+            directionRequest.source = MKMapItem(placemark: MKPlacemark(coordinate: currentLocation.coordinate))
+            // To selected car location
+            directionRequest.destination = MKMapItem(placemark: MKPlacemark(coordinate: destination.coordinate))
+            directionRequest.transportType = .automobile
+            
+            let directions = MKDirections(request: directionRequest)
+            
+            directions.calculate(completionHandler: { (response, error) in
+                guard let response = response else {
+                    if let error = error {
+                        print("Error: \(error)")
+                    }
+                    
+                    return
+                }
+                
+                let route = response.routes[0]
+                self.mapView.add((route.polyline), level: .aboveRoads)
+                
+                let rect = route.polyline.boundingMapRect
+                self.mapView.setRegion(MKCoordinateRegionForMapRect(rect), animated: true)
+            })
+        }
+    }
+    
 }

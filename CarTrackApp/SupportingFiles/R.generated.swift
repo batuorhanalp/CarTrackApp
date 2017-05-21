@@ -21,8 +21,17 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.file` struct is generated, and contains static references to 0 files.
+  /// This `R.file` struct is generated, and contains static references to 1 files.
   struct file {
+    /// Resource file `default.gpx`.
+    static let defaultGpx = Rswift.FileResource(bundle: R.hostingBundle, name: "default", pathExtension: "gpx")
+    
+    /// `bundle.url(forResource: "default", withExtension: "gpx")`
+    static func defaultGpx(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.defaultGpx
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
     fileprivate init() {}
   }
   

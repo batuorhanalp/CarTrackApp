@@ -34,6 +34,7 @@
 		476736041ECCD6E70088C0DC /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476736031ECCD6E70088C0DC /* LocationManager.swift */; };
 		476736061ECCD75F0088C0DC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 476736051ECCD75F0088C0DC /* CoreLocation.framework */; };
 		476736091ECD8BFA0088C0DC /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476736081ECD8BFA0088C0DC /* LocationTests.swift */; };
+		47BE1F0E1ED1757500C14FB1 /* default.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 47BE1F0D1ED1757500C14FB1 /* default.gpx */; };
 		47C614F71ECDEBBC00C44A19 /* CarMapViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C614F61ECDEBBC00C44A19 /* CarMapViewControllerUITests.swift */; };
 		607745C4D1806AB3186D0DB5 /* Pods_CarTrackAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5387B2E61016235D6E13EFA /* Pods_CarTrackAppUITests.framework */; };
 		71DCC58A5555D59768FD6426 /* Pods_CarTrackAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7254D7DE2B57FC7D048F3E3 /* Pods_CarTrackAppTests.framework */; };
@@ -92,6 +93,7 @@
 		476736031ECCD6E70088C0DC /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationManager.swift; path = Helpers/LocationManager.swift; sourceTree = "<group>"; };
 		476736051ECCD75F0088C0DC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		476736081ECD8BFA0088C0DC /* LocationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationTests.swift; path = HelperTests/LocationTests.swift; sourceTree = "<group>"; };
+		47BE1F0D1ED1757500C14FB1 /* default.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = default.gpx; sourceTree = "<group>"; };
 		47C614F61ECDEBBC00C44A19 /* CarMapViewControllerUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarMapViewControllerUITests.swift; sourceTree = "<group>"; };
 		86CF813617EA53D216B3B887 /* Pods-CarTrackAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarTrackAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarTrackAppUITests/Pods-CarTrackAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		93375CEDC0F5E1626D87CD4D /* Pods-CarTrackAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarTrackAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarTrackAppTests/Pods-CarTrackAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 		4714CCC51ECB392D00AABB9C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				47BE1F0D1ED1757500C14FB1 /* default.gpx */,
 				476735FF1ECCC8D80088C0DC /* R.generated.swift */,
 				4714CCCB1ECB39A700AABB9C /* Info.plist */,
 				4714CCC61ECB392D00AABB9C /* Assets.xcassets */,
@@ -440,6 +443,7 @@
 				4714CCC91ECB392D00AABB9C /* Main.storyboard in Resources */,
 				4712A4691ECDC27200C86CB8 /* CarDetailView.xib in Resources */,
 				4714CCCA1ECB392D00AABB9C /* Assets.xcassets in Resources */,
+				47BE1F0E1ED1757500C14FB1 /* default.gpx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
