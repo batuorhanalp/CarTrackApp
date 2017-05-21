@@ -8,5 +8,4 @@ xcode_workspace: CarTrackApp.xcodeworkspace
 xcode_scheme: CarTrackApp
 xcode_sdk: iphonesimulator10.3  
 script:
-  xcodebuild -workspace CarTrackApp.xcworkspace -list
-  
+  xcodebuild -workspace CarTrackApp.xcworkspace -scheme Pods-CarTrackAppTests -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.3' test
