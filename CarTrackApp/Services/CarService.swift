@@ -23,7 +23,7 @@ struct CarService {
         DatabaseMethods.clearDatabase {
             
             /*
-             * After database clearing completition fetchs the cars from Rest API
+             * When the database clearing process has completed, fetchs the cars from Rest API
              */
             let router = Router(method: .get, path: CarService.rootPath, parameters: nil)
             do {

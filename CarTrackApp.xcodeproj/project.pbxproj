@@ -853,11 +853,6 @@
 			baseConfigurationReference = 342CE0E92D7013B1333492A2 /* Pods-CarTrackAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ARCHS = (
-					arm64,
-					armv7s,
-					armv7,
-				);
 				DEVELOPMENT_TEAM = 487L88FVT4;
 				INFOPLIST_FILE = CarTrackAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -873,11 +868,6 @@
 			baseConfigurationReference = 86CF813617EA53D216B3B887 /* Pods-CarTrackAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ARCHS = (
-					arm64,
-					armv7s,
-					armv7,
-				);
 				DEVELOPMENT_TEAM = 487L88FVT4;
 				INFOPLIST_FILE = CarTrackAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
